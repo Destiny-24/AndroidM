@@ -1,0 +1,364 @@
+@divide: 10;
+@pswWidth: 640;
+@ppr:@divide/@pswWidth * 1rem;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page-container{
+  width: 100%;
+  height: 100%;
+  .Application-section{
+    height: 684*@ppr;
+    background: url("./../image/section1-bg.jpg")no-repeat center;
+    background-size: cover;
+    .logo{
+      margin-left: 22*@ppr;
+      .logo-imag{
+        width: 196*@ppr;
+        height: 84*@ppr;
+        border-radius: 0 0 20*@ppr 0;
+        background-color: #35B558;
+        padding: 19*@ppr 33*@ppr 18*@ppr 33*@ppr;
+      }
+    }
+    .subtitle{
+      text-align: center;
+      width:374*@ppr;
+      font-size: 24*@ppr;
+      font-weight: 600;
+      color: #ffffff;
+      text-shadow:0*@ppr 0*@ppr 8*@ppr rgba(0, 0, 0, 0.49);
+      border:1*@ppr solid #ccc; border-width:1*@ppr 0;
+      padding:20*@ppr 0 20*@ppr 0;
+      margin: 0 auto;
+    }
+    .title{
+      width:410*@ppr;
+      height:108*@ppr;
+      font-size:50*@ppr;
+      text-align: center;
+      font-family:Lantinghei SC;
+      font-weight:600;
+      color:rgba(255,255,255,1);
+      line-height:60*@ppr;
+      text-shadow:0*@ppr 1*@ppr 13*@ppr rgba(0, 0, 0, 0.31);
+      margin:30*@ppr auto;
+    }
+    .input-conta{
+      margin-top: 101*@ppr;
+      text-align: center;
+      position: relative;
+      .num-input{
+        width:558*@ppr;
+        height:93*@ppr;
+        padding-left: 21*@ppr;
+        background:rgba(255,255,255,1);
+        border:2*@ppr solid rgba(231,44,43,1);
+        box-shadow:0*@ppr 1*@ppr 13*@ppr 0*@ppr rgba(0, 0, 0, 0.66), 0*@ppr 3*@ppr 10*@ppr 0*@ppr rgba(0, 0, 0, 0.21);
+        border-radius:10*@ppr;
+        font-size: 28*@ppr;
+        color: #616161;
+      }
+      .false-hint{
+        display: none;
+        position: absolute;
+        width:191*@ppr;
+        height:23*@ppr;
+        font-size:24*@ppr;
+        font-family:Lantinghei SC;
+        font-weight:200;
+        color:rgba(255,0,0,1);
+        left: 400*@ppr;
+        top: 40*@ppr;
+      }
+    }
+    .button{
+      width:558*@ppr;
+      height:93*@ppr;
+      background:rgba(231,44,43,1);
+      box-shadow:0*@ppr 1*@ppr 13*@ppr 0*@ppr rgba(0, 0, 0, 0.66);
+      border-radius:10*@ppr;
+      margin: 27*@ppr 0 0 41*@ppr;
+      font-size: 40*@ppr;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 50*@ppr;
+      text-shadow: 0*@ppr 3*@ppr 2*@ppr rgba(141, 13, 13, 0.49);
+    }
+  }
+  .package-section{
+    height: 567*@ppr;
+    background: url("./../image/section2-bg.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .engineer-section{
+    height: 963*@ppr;
+    background: url("./../image/section3-bg.jpg") no-repeat center;
+    background-size: cover;
+    .title{
+      font-size: 36*@ppr;
+      font-weight: 600;
+      color: #ffffff;
+      text-align: center;
+      padding-top: 72*@ppr;
+      padding-bottom: 10*@ppr;
+      .green{
+        color: #00FFA8;
+      }
+    }
+    .engineer{
+      display: flex;
+      width: 500*@ppr;
+      margin: 0 auto;
+      padding-top: 58*@ppr;
+      .avatar{
+        height: 153*@ppr;
+        .img{
+          width: 152*@ppr;
+          height: 152*@ppr;
+        }
+      }
+      .info{
+        margin-left: 28*@ppr;
+        .name{
+          font-size:28*@ppr;
+          font-family:Lantinghei SC;
+          font-weight:600;
+          color:rgba(255,255,255,1);
+          line-height:32*@ppr;
+          .exp{
+            padding: 3*@ppr 14*@ppr 3*@ppr 13*@ppr;
+            font-size:20*@ppr;
+            font-weight:600;
+            color:rgba(0,0,0,1);
+            line-height:32*@ppr;
+            background:rgba(0,255,168,1);
+            border-radius:12*@ppr 12*@ppr 12*@ppr 12*@ppr;
+            margin-left: 18*@ppr;
+          }
+        }
+        .engineer-info{
+          width: 360*@ppr;
+          padding-top: 18*@ppr;
+          font-size: 24*@ppr;
+          font-weight: 200;
+          line-height: 32*@ppr;
+          color: #ffffff;
+          .duty{
+            color: #00FFA8;
+          }
+        }
+      }
+    }
+  }
+  .video-section{
+    height: 792*@ppr;
+    background-color: #000000;
+    .title{
+      padding-top: 70*@ppr;
+      text-align: center;
+      font-size:36*@ppr; 
+      font-family:Lantinghei SC; 
+      font-weight:600; 
+      color:rgba(255,255,255,1);
+      .green{
+        color: #00FFA8;
+      }
+    }
+    .video{
+      position: relative;
+      margin-top: 40*@ppr;
+      width: 639*@ppr;
+      height: 508*@ppr;
+      background: url("./../image/section4-bg.jpg") no-repeat center ;
+      background-size: cover;
+      .play{
+        width: 154*@ppr;
+        height: 154*@ppr;
+        position: absolute;
+        background: url("./../image/play-video.png")no-repeat center;
+        left: 241*@ppr;
+        top: 178*@ppr;
+      }
+    }
+    .subtitle{
+      display: flex;
+      height: 99*@ppr;
+      .logo{
+        width: 189*@ppr;
+        height: 99*@ppr;
+        background-color: #35B558;
+        .logo-imag{
+          margin: 32*@ppr 29*@ppr 19*@ppr 25*@ppr;
+        }
+      }
+      .works{
+        width: 452*@ppr;
+        font-size: 36*@ppr;
+        font-weight: 600;
+        color: #ffffff;
+        background-color: #8861B1;
+        text-align: center;
+        padding-top: 30*@ppr;
+        .purple{
+          color: #43285F;
+        }
+      }
+    }
+  }
+  .efficient-section{
+    height: 1069*@ppr;
+    background: url("./../image/section5-bg.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+    .title{
+      text-align: right;
+      font-size: 36*@ppr;
+      font-weight: 200;
+      line-height: 51*@ppr;
+      color: #ffffff;
+      padding: 62*@ppr 74*@ppr 0 0;
+      .green{
+        color: #00FFA8;
+        font-weight: 600;
+      }
+    }
+    .begin{
+      position: absolute;
+      left: 82*@ppr;
+      top: 197*@ppr;
+      font-size:26*@ppr;
+      font-weight:600;
+      color:rgba(254,255,255,1);
+      line-height:31*@ppr;
+    }
+    .schedule{
+      margin-top: 165*@ppr;
+      .stage{
+        font-size:26*@ppr;
+        font-weight:200;
+        color:rgba(255,255,255,1);
+        margin: 65*@ppr 0 0 178*@ppr;
+        .content{
+          font-size: 26*@ppr;
+          font-weight: 400;
+        }
+      }
+    }
+    .end{
+      position: absolute;
+      font-size:24*@ppr;
+      font-family:Lantinghei SC;
+      font-weight:600;
+      color:rgba(7,79,54,1);
+      line-height:31*@ppr;
+      left:65*@ppr;
+      bottom:118*@ppr;
+    }
+  }
+  .interpolate-section{
+    height: 447*@ppr;
+    background: url("./../image/section6-bg.png")no-repeat center;
+    background-size: cover;
+    .title{
+      font-size:34*@ppr;
+      font-weight:600;
+      color:rgba(255,255,255,1);
+      line-height:51*@ppr;
+      text-align: center;
+      padding-top: 87*@ppr;
+      .green{
+        color: #00FFA8;
+      }
+    }
+  }
+  .who-section{
+    height: 1211*@ppr;
+    background:url("./../image/success-page-bg2.jpg")no-repeat center ;
+    background-size: cover;
+    .title{
+      font-size:36*@ppr;
+      font-family:Lantinghei SC;
+      font-weight:600;
+      color:rgba(0,255,168,1);
+      text-align: center;
+      padding-top: 76*@ppr;
+    }
+    .subtitle{
+      font-size:26*@ppr;
+      font-weight:600;
+      color:rgba(255,255,255,1);
+      display: flex;
+      margin-left: 63*@ppr;
+      margin-bottom: 66*@ppr;
+      .logo{
+        margin-right: 11*@ppr;
+      }
+    }
+    .list{
+      width: 570*@ppr;
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      .item{
+        font-size:26.55*@ppr;
+        font-weight:200;
+        color:rgba(255,255,255,1);
+        line-height:39*@ppr;
+        // margin-right: 42*@ppr;
+        .protruding{
+          font-size: 46*@ppr;
+        }
+      }
+    }
+    .honor-title{
+      font-size:28*@ppr;
+      font-family:Lantinghei SC;
+      font-weight:600;
+      color:rgba(0,255,168,1);
+      text-align: center;
+      margin-top: 72*@ppr;
+      margin-bottom: 46*@ppr;
+    }
+    .honor-list{
+      width: 550*@ppr;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 auto;
+      .honor-item{
+        text-align: center;
+        padding-top: 21*@ppr;
+        .logo{
+          width:258*@ppr;
+          height:183*@ppr;
+        }
+        .detailed{
+          font-size:24*@ppr;
+          color:rgba(255,255,255,1);
+          line-height:30*@ppr;
+        }
+      }
+    }
+  }
+  .signup-section{
+    height: 157*@ppr;
+    background-color: #f03300;
+    text-align: center;
+    padding-top: 36*@ppr;
+    .button{
+      width:560*@ppr;
+      height:81*@ppr;
+      box-shadow:0*@ppr 3*@ppr 9*@ppr 0*@ppr rgba(203,44,1,0.49);
+      border: none;
+      border-radius: 10*@ppr;
+      font-size: 36*@ppr;
+      color: #ffffff;
+      background-color: #ee6f19;
+    }
+  }
+}
